@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.apache.camel:camel-stream
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.apache.camel:camel-core
+    versions:
+    - 3.7.1
+    - 3.7.2
+    - 3.8.0
+  - dependency-name: org.projectlombok:lombok
+    versions:
+    - 1.18.18
+  - dependency-name: com.alibaba:fastjson
+    versions:
+    - 1.2.75
+  - dependency-name: org.mongodb:mongo-java-driver
+    versions:
+    - 3.12.7
